@@ -52,7 +52,7 @@
 
     <div *ngFor="let job of headers;" style="margin-bottom: 15px; border: 1px solid #1651c5; border-radius: 8px; padding: 12px; background-color: white;">
       <strong>{{ job.name }}</strong><br>
-      <span style="font-size: 0.9rem; color: #6b7280;">{{ job.photoUrl || 'Sin foto' }}</span><br><br>
+      <span style="font-size: 0.9rem; color: #6b7280;">{{ job.email }}</span><br><br>
 
       <input type="submit" value="Editar" (click)="seleccionarJob(job)"
         style="padding: 6px 12px; background-color: #000000; color: white; border: none; border-radius: 4px; margin-right: 8px; cursor: pointer;">
