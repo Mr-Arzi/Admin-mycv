@@ -1,15 +1,29 @@
-<h3><b> admin-Cv App </b></h3>
-<nav>
-    <ul>
-        <li><a routerLink="/header"> header </a></li>
-        <li><a routerLink="/workexperience"> work-experience </a></li>
-        <li><a routerLink="/education"> education </a></li>
-        <li><a routerLink="/certificates"> certificates </a></li>
-        <li><a routerLink="/skills"> skills </a></li>
-        <li><a routerLink="/languages"> languages </a></li>
-        <li><a routerLink="/interests"> interests </a></li>
-    </ul>
-</nav>
 
-<router-outlet></router-outlet>
+<div style="background-color: #24a513; padding: 15px 20px; border: 2px solid #ffffff; border-radius: 8px; margin: 10px; font-family: sans-serif;">
+    <h3 style="margin: 0; color: #111827; font-weight: bold;">Admin-Cv App</h3>
+  </div>
+  
+
+
+    <nav style="
+  background-color: #2b87ff;
+  padding: 10px 20px;
+  font-family: sans-serif;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+">
+   <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 30px; padding: 0; margin: 5;">
+    <li><a routerLink="/header" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Header</a></li>
+    <li><a routerLink="/workexperience" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Work Experience</a></li>
+    <li><a routerLink="/education" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Education</a></li>
+    <li><a routerLink="/certificates" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Certificates</a></li>
+    <li><a routerLink="/skills" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Skills</a></li>
+    <li><a routerLink="/languages" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Languages</a></li>
+    <li><a routerLink="/interests" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Interests</a></li>
+  </ul>
+  </nav>
+  
+  
+  <router-outlet></router-outlet>
 
