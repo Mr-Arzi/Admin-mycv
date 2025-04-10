@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,700');
 
 body {
-    background: #2E9CE6;
+    background: #ffc400;
     padding: 3em;
     font-family: 'Raleway', 'Arial';
-    color: #fff;
+    color: #050000;
 }
 
 ul {
@@ -21,11 +21,11 @@ ul li {
 }
 
 ul li a {
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
 }
 
