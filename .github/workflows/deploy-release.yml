@@ -3,9 +3,9 @@ on:
   #push:
     #branches: [ "deploy-release"]
   pull_request:
-    branches: [ "master"]
+    branches: [ "deploy-release"]
 jobs:
-  ci_cd_deploy_master:
+  ci_cd_deploy_release:
     runs-on: ubuntu-latest
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
