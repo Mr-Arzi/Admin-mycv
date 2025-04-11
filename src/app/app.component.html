@@ -1,29 +1,35 @@
+<!-- Encabezado -->
+<div style="background-color: #7ecf3b; padding: 15px 20px; border: 2px solid #ffffff; border-radius: 8px; margin: 10px; font-family: sans-serif;">
+  <h3 style="margin: 0; color: #111827; font-weight: bold;">Admin-Cv App</h3>
+</div>
 
-<div style="background-color: #24a513; padding: 15px 20px; border: 2px solid #ffffff; border-radius: 8px; margin: 10px; font-family: sans-serif;">
-    <h3 style="margin: 0; color: #111827; font-weight: bold;">Admin-Cv App</h3>
-  </div>
-  
+<!-- Contenedor principal con nav + contenido -->
+<div style="display: flex; flex-direction: row; height: 100vh; font-family: sans-serif;">
 
-
-    <nav style="
-  background-color: #2b87ff;
-  padding: 10px 20px;
-  font-family: sans-serif;
-  border: 3px solid #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-">
-   <ul style="list-style: none; display: flex; flex-wrap: wrap; gap: 30px; padding: 0; margin: 5;">
-    <li><a routerLink="/header" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Header</a></li>
-    <li><a routerLink="/workexperience" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Work Experience</a></li>
-    <li><a routerLink="/education" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Education</a></li>
-    <li><a routerLink="/certificates" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Certificates</a></li>
-    <li><a routerLink="/skills" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Skills</a></li>
-    <li><a routerLink="/languages" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Languages</a></li>
-    <li><a routerLink="/interests" routerLinkActive="active-link" style="text-decoration: none; font-size: 2rem; color: #111827; font-weight: 500;">Interests</a></li>
-  </ul>
+  <!-- Menú vertical -->
+  <nav style="
+    background-color: #1e47cf;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 220px;
+    height: 50%;
+  ">
+    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 50px;">
+      <li><a routerLink="/header" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Header</a></li>
+      <li><a routerLink="/workexperience" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Work Experience</a></li>
+      <li><a routerLink="/education" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Education</a></li>
+      <li><a routerLink="/certificates" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Certificates</a></li>
+      <li><a routerLink="/skills" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Skills</a></li>
+      <li><a routerLink="/languages" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Languages</a></li>
+      <li><a routerLink="/interests" routerLinkActive="active-link" style="text-decoration: none; font-size: 1.5rem; color: #ffffff; font-weight: 500;">Interests</a></li>
+    </ul>
   </nav>
-  
-  
-  <router-outlet></router-outlet>
 
+  <!-- Contenido dinámico (componentes) -->
+  <div style="flex: 1; padding: 10px; overflow-y: auto;">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
