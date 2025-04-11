@@ -1,0 +1,61 @@
+<div class="container color-dark">
+  <div class="col">
+    <p></p>
+  </div>
+</div>
+
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 30px; padding: 40px; font-family: sans-serif;">
+
+  <!-- FORMULARIO -->
+  <div>
+    <h2 style="color: #000000; margin-top: 0;">Agregar</h2>
+    <form>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="startDate" placeholder="start date (mm/yyyy)" [(ngModel)]="myWorkExperience.startDate"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="endDate" placeholder="end date (mm/yyyy)" [(ngModel)]="myWorkExperience.endDate"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="location" placeholder="location" [(ngModel)]="myWorkExperience.location"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="position" placeholder="position" [(ngModel)]="myWorkExperience.position"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="company" placeholder="company" [(ngModel)]="myWorkExperience.company"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+      <div style="margin-bottom: 12px;">
+        <input type="text" name="accomplishments" placeholder="accomplishments" [(ngModel)]="myWorkExperience.accomplishments"
+          style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc;">
+      </div>
+    
+
+      <input type="submit" value="{{ btnTxt }}" (click)="AgregarJob()"
+        style="width: 100%; padding: 12px; background-color: #000000; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+    </form>
+  </div>
+
+ 
+  <div>
+    <h2 style="color: #000000; margin-top: 0;">Lista</h2>
+
+    <div *ngFor="let job of workExperience;" style="margin-bottom: 15px; border: 1px solid #1651c5; border-radius: 8px; padding: 12px; background-color: white;">
+      <strong>{{ job.company }}</strong><br>
+      <span style="font-size: 0.9rem; color: #6b7280;">{{ job.position}}</span><br><br>
+
+      <input type="submit" value="Editar" (click)="seleccionarJob(job)"
+        style="padding: 6px 12px; background-color: #000000; color: white; border: none; border-radius: 4px; margin-right: 8px; cursor: pointer;">
+      <input type="submit" value="Eliminar" (click)="deleteJob(job.id)"
+        style="padding: 6px 12px; background-color: #000000; color: white; border: none; border-radius: 4px; cursor: pointer;">
+    </div>
+  </div>
+
+</div>
